@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Publish New Event</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="col-md-8 col-md-offset-2 content">
+        <h2 >Publish New Event</h2>
+
+        <form class="form-horizontal col-md-10 col-md-offset-1" method="get" action="new-event.html" onsubmit="return sendData()">
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Event Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" name="event_name" class="form-control" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Event Date</label>
+                    <div class="col-sm-9">
+                        <input type="date" name="date" class="form-control" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Number Of Days</label>
+                    <div class="col-sm-9">
+                        <input type="number" name="no_days" class="form-control" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Time <span>From</span></label>
+                    <div class="col-sm-5">
+                        <input type="number" name="start_time_1" class="form-control" min="1" max="12">
+
+                    </div>
+                    <div class="col-sm-4">
+                            <select class="form-control" name="type_time_1">
+                                    <option value="AM">AM</option>
+                                    <option value="PM">PM</option>
+                            </select>
+                     </div>
+
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label"> <span>To</span></label>
+                    <div class="col-sm-5">
+                        <input type="number" name="end_time_2" class="form-control" min="1" max="12">
+                    </div>
+                    <div class="col-sm-4">
+                            <select class="form-control" name="type_time_2">
+                                    <option value="AM">AM</option>
+                                    <option value="PM">PM</option>
+                            </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label ">Type of event</label>
+                  <div class="col-sm-9 committee">
+                      <div class="form-group">
+                         <label>
+                             <input type="radio" name="type" value="Private"> private
+                         </label>
+                         <label>
+                             <input type="radio"  name="type" value="Public"> public
+                         </label>
+                     </div>
+                  </div>
+
+                </div>
+                 <div class="form-group">
+                        <label class="col-sm-3 control-label ">Committee</label>
+                        <div class="col-sm-9 committee">
+                            <div class="form-group">
+                               <label>
+                                   <input type="checkbox" name="committee1" value="Organizing Committe"> Organizing Committee
+                               </label>
+                           </div>
+                           <div class="form-group">
+                               <label>
+                                    <input type="checkbox" name="committee2" value="Hospitality Committee"> Hospitality Committee
+                               </label>
+                           </div>
+                           <div class="form-group">
+                               <label>
+                                   <input type="checkbox" name="committee3" value="Information Committee"> Information Committee
+                               </label>
+                           </div>
+
+                           <div class="form-group">
+                               <label>
+                                    <input type="checkbox" name="committee4" value="Design Committee"> Design Committee
+                               </label>
+                           </div>
+                        </div>
+
+                 </div>
+
+                <div class="form-group">
+                    <label class="col-sm-3 control-label"> Names of volunteers</label>
+                    <div class="col-sm-9">
+                        <textarea name="no_volunteers" class="form-control"></textarea>
+                    </div>
+                </div>
+
+                 <div class="form-group">
+                        <button type="submit" class="btn  col-md-4 col-md-offset-4" style="background-color:#D050D0; color:white">Submit</button>
+
+                 </div>
+        </form>
+    </div>
+
+</body>
+</html>

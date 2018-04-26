@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Publish New Event</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="new-event.css">
+</head>
+<body>
+    <div class="col-md-8 col-md-offset-2 content">
+        <h2>New Event</h2>
+        <table class="table table-hover">
+            <tr>
+                <th>Event Name</th>
+                <td id="event_name"></td>
+            </tr>
+            <tr>
+                <th>ُEvent Date</th>
+                <td id="date"></td>
+            </tr>
+            <tr>
+                <th>Number Of Days</th>
+                <td id="no_days"></td>
+            </tr>
+            <tr>
+              <th>Type </th>
+              <td id="type"></td>
+            </tr>
+            <tr>
+                <th>Time</th>
+                <td>
+                    <strong>From </strong> &nbsp;
+                    <span id="start_time_1"></span>:
+                    <span id="type_time_1"></span>  &nbsp;  &nbsp;  &nbsp; <strong>To</strong>&nbsp;&nbsp;
+                    <span id="end_time_2"></span>:
+                    <span id="type_time_2"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>Committee</th>
+                <td >
+                    <span id="committee1"></span> <br>
+                    <span id="committee2"></span> <br>
+                    <span id="committee3"></span> <br>
+                    <span id="committee4"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>Number of volunteers</th>
+                <td><textarea id="no_volunteers" readonly style="width:500px;resize:vertical"></textarea></td>
+            </tr>
+        </table>
+
+    </div>
+<script src="jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

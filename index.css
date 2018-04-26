@@ -1,0 +1,17 @@
+body{
+    background: linear-gradient(to right, #FFF , #FFF);
+}
+
+.content{
+    background: #31708f00;
+    margin-top: 32px;
+    box-shadow: 0 0 20px 1px #000;
+}
+
+.committee{
+    margin-left: 15px;
+    margin-right: -19px;
+}
+h2{
+    text-align: center
+}
